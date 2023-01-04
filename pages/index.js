@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
 
 import Announcement from '../components/announcement'
@@ -28,15 +27,17 @@ const Home = (props) => {
         </Head>
         <div className="home-header">
           <div className="home-heading">
-            <div id="notifcation" className="home-notification">
-              <Link href="/">
-                <a>
-                  <Announcement
-                    rootClassName="announcement-root-class-name"
-                    className="home-component"
-                  ></Announcement>
-                </a>
-              </Link>
+            <div className="home-notification">
+              <a
+                href="https://meetings.hubspot.com/jdokkestul"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <Announcement
+                  rootClassName="announcement-root-class-name"
+                  className="home-component"
+                ></Announcement>
+              </a>
             </div>
             <Navbar></Navbar>
           </div>
@@ -48,10 +49,10 @@ const Home = (props) => {
                 className="home-image"
               />
               <h1 className="home-title">AI For Platforms</h1>
-              <h2 className="home-title1">Turning complexity into clarity</h2>
+              <h2 className="home-title1">Turn complexity into clarity</h2>
               <div id="#contact" className="home-hero-buttons">
                 <a
-                  href="https://calendly.com/d/g7h-snb-zd4"
+                  href="https://meetings.hubspot.com/jdokkestul"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="home-link1"
@@ -398,6 +399,12 @@ const Home = (props) => {
             }
           }
           @media (max-width: 479px) {
+            .home-title {
+              text-align: center;
+            }
+            .home-title1 {
+              text-align: center;
+            }
             .home-hero-buttons {
               width: 100%;
               flex-direction: column;
