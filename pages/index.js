@@ -111,6 +111,7 @@ const Home = (props) => {
           }
           .home-notification {
             width: 100%;
+            position: relative;
           }
           .home-component {
             text-decoration: none;

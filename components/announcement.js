@@ -37,8 +37,12 @@ const Announcement = (props) => {
             line-height: 21px;
           }
           .announcement-root-class-name {
+            top: 0px;
             flex: 0 0 auto;
+            left: 0px;
+            right: 0px;
             width: 100%;
+            position: static;
           }
           .announcement-root-class-name1 {
             flex: 0 0 auto;
@@ -48,6 +52,9 @@ const Announcement = (props) => {
             .announcement-announcement {
               align-items: center;
               flex-direction: column;
+            }
+            .announcement-title {
+              text-align: center;
             }
           }
         `}
